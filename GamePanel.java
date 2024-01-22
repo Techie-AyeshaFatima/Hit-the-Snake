@@ -71,6 +71,7 @@ public class GamePanel extends JPanel implements ActionListener,MouseListener {
      
 
       private void gameOver(Graphics g) {
+	      timer.stop();
           g.setColor(Color.ORANGE);
           FontMetrics metrics1 = getFontMetrics(g.getFont());
           g.drawString("Score: " + score, (width - metrics1.stringWidth("Score: " + score)) / 2, g.getFont().getSize());
